@@ -4,7 +4,7 @@ Console.WriteLine("Введите целое положительное числ
 int i = Convert.ToInt32(Console.ReadLine());
 int sum = 0;
 
-for (i > 0)
+while (i > 0)
 {
 int num = i % 10;
 i = i / 10;
