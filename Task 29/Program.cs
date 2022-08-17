@@ -2,17 +2,6 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-int [] numbers = new int[8];
-Console.Write("[");
-
-for (int i = 0; i < numbers.Length; i++)
- {
-    numbers [i] = new Random().Next(0, 11);
-    Console.Write(" " + Method (i) + " ");
- }
-Console.Write("]");
-
-int Method (int a)
-{
-    return numbers[a];
-}
+int[] array = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+var str = string.Join(" ", array);
+Console.WriteLine(str);
