@@ -1,7 +1,21 @@
 ﻿// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
-// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-// 6, 1, 33 -> [6, 1, 33]
 
-int[] array = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
-var str = string.Join(" ", array);
-Console.WriteLine(str);
+int[] NewArray()
+{
+    int[] array = new int[8];
+    for (int i = 0; i <= 7; i++)
+    {
+        array[i] = new Random().Next(0, 8);
+    }
+    return array;
+ }
+
+int[] array = NewArray();
+void PrintArray()
+{
+    for (int i = 0; i <= 7; i++)
+ {
+     Console.Write($" {array [i]}, ");
+ }
+}
+PrintArray(); 
